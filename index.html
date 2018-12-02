@@ -1,0 +1,76 @@
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>HPLC Tips</title>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="inside">
+            <h1>HPLC Tips</h1>
+            <nav>
+              <a href="index.html">Home</a>
+              <a href="">What's HPLC?</a>
+              <a href="">About</a>
+              <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+<div class="main">
+    <img src="img/banner.jpg">
+    <div class="item">
+    <h2>Background</h2>
+    <p>High performance liquid chromatography is ubiquitous in the pharmaceutical field. It separates substances in a sample and yields concentration or purity information.
+        There's a plethora of applications in fields outside of pharma as well, like the food industry, urine analysis of drugs, and geology. 
+    I wanted to compile a few equations that have been useful to me regarding aspects of HPLC, and figured it might be interesting to implement calculators for each equation as well. </p>
+    </div>
+    <div class="item">
+    <h2>HPLC Column Volume</h2>
+    <p>Inside an HPLC column during use, there is stationary phase and mobile phase. The stationary phase are the molecules bound to the inside of the column
+        that provides it with its unique column chemistry (for example, a C8 or C18 or phenyl-hexyl column). The mobile phase is the solution that is flowing
+    through the column. Column volume essentially refers to the volume of mobile phase can be contained in the column, both the volume outside of the packing particles,
+and the volume inside the pores of the packing particles, but not the packing particles themselves (i.e., the stationary phase). </p>
+<p> Calculating the column volume is useful for choosing a run time for your HPLC method, selecting a gradient profile, and calculating solvent consumption requirements.</p>
+    <div class="calculator">
+        
+        <div class="text">
+        
+        <form action = "" id="hplccalc" onsubmit="return false;"> 
+                <fieldset>
+                    <legend>HPLC Column Volume Calculator</legend>
+                    <label>Length (mm)</label>
+                    <input type="number" id="length" name="length" onchange="calculateVol()" />
+                    <label>Internal Diameter (mm)</label>
+                    <input type="number" id="intd" name="intd" onchange="calculateVol()" />
+                </fieldset>
+            </form>
+            <h3>Volume Result:<span id="result"></span></h3>
+        </div>
+        <img id="eq1" src="img/columnvolumeeq.jpg">
+    </div>
+</div>
+<div class="item">
+    <h2>Capacity Factor or Retention Factor</h2>
+    <div class="calculator">
+        
+        <div class="text">
+        <form action = "" id="capfactor" onsubmit="return false;">
+                <fieldset>
+                    <legend> Capacity Factor (Retention Factor) Calculator</legend>
+                    <label>Unretained Peak (Void Volume) (min)</label>
+                    <input type="number" id="unretained" name="unretained" onchange="calculateCap()" />
+                    <label>Peak of Interest Retention Time (min)</label>
+                    <input type="number" id="retained" name="retained" onchange="calculateCap()" />
+                  </fieldset>
+              </form>
+              <h3>Capacity Factor Result:<span id="capresult"></span></h3>
+            </div>
+              <img id="eq2" src="img/capacityfactoreq.png">
+    </div>
+</div>
+</div>
+</body>

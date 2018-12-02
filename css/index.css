@@ -1,0 +1,233 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Helvetica', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Helvetica', sans-serif;
+}
+h1 {
+  font-size: 4.1rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.4rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.main {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  color: #F1F1F1;
+  background-color: #23293B;
+  border-bottom: 1px solid #454A59;
+  padding: 10px 0 10px 0;
+}
+header .inside {
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+header .inside nav {
+  display: flex;
+  color: #F1F1F1;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
+}
+header .inside nav a {
+  color: #F1F1F1;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.item {
+  margin: 50px 0 50px 0;
+}
+.item h2 {
+  margin: 10px 0 10px 0;
+}
+.item p {
+  margin: 10px 0 10px 0;
+}
+.item .calculator {
+  display: flex;
+  flex-direction: row;
+}
+.item .calculator .text {
+  width: 60%;
+  margin-right: 10%;
+}
+.item .calculator .text form {
+  margin: 10px 0 10px 0;
+  line-height: 2;
+}
+.item .calculator img {
+  width: 20%;
+  height: 20%;
+}
+.item .calculator h3 {
+  border: 1px solid #dee2e6;
+  padding: 10px 2% 10px 2%;
+}
+form legend {
+  font-size: 1.6rem;
+}
+form label {
+  font-size: 1.6rem;
+}
