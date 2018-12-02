@@ -217,9 +217,10 @@ img {
   margin: 10px 0 10px 0;
   line-height: 2;
 }
-.item .calculator img {
+.item .calculator .image {
+  display: flex;
+  align-items: center;
   width: 20%;
-  height: 20%;
 }
 .item .calculator h3 {
   border: 1px solid #dee2e6;
